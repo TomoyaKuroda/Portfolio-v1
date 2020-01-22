@@ -36,7 +36,7 @@ const Hamburger = ({ state }) => {
   let line1 = useRef(null);
   let line2 = useRef(null);
   let line3 = useRef(null);
-  let info = useRef(null);
+  // let info = useRef(null);
 
   useEffect(() => {
     // If the menu is open and we click the menu button to close it.
@@ -59,7 +59,7 @@ const Hamburger = ({ state }) => {
         height: "100%"
       });
       staggerReveal(reveal1, reveal2);
-      fadeInUp(info);
+      // fadeInUp(info);
       staggerText(line1, line2, line3);
     }
   }, [state]);
@@ -112,7 +112,7 @@ const Hamburger = ({ state }) => {
                   </li>
                 </ul>
               </nav>
-              <div ref={el => (info = el)} className="info">
+              {/* <div ref={el => (info = el)} className="info">
                 <h3>Our Promise</h3>
                 <p>
                   The passage experienced a surge in popularity during the 1960s
@@ -120,10 +120,9 @@ const Hamburger = ({ state }) => {
                   during the 90s as desktop publishers bundled the text with
                   their software.
                 </p>
-              </div>
-              <div className="locations">
+              </div> */}
+              {/* <div className="locations">
                 Locations:
-                {/* Returning the list of cities */}
                 {cities.map(el => (
                   <span
                     key={el.name}
@@ -133,7 +132,7 @@ const Hamburger = ({ state }) => {
                     {el.name}
                   </span>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

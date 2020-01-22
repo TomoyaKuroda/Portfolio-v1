@@ -12,6 +12,8 @@ import codeImg from "./assets/gradient.jpg";
 import assistonImg from "./assets/assiston.png";
 import assistonLaptopImg from "./assets/assistonDesktop.png";
 import { useMediaQuery } from "react-responsive";
+import Projects from "./pages/projects";
+import Contact from "./pages/contact";
 function App() {
   return (
     <ContextProvider>
@@ -23,7 +25,6 @@ function App() {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/projects" component={Projects} />
-                <Route exact path="/solutions" component={Solutions} />
                 <Route exact path="/contact-us" component={Contact} />
               </Switch>
             </div>
@@ -32,41 +33,6 @@ function App() {
       </Router>
     </ContextProvider>
   );
-}
-
-function Projects() {
-  return (
-    <div className="flip-card">
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
-          <img src={assistonImg} alt="" />
-        </div>
-        <div className="flip-card-back">
-          <div className="back-header">
-            <img src={assistonLaptopImg} alt="" />
-          </div>
-          <div className="back-footer">
-            <h2>assist on</h2>
-            <p>
-              I collaborated with a web designer and developed the WordPress
-              website.
-            </p>
-            <a href="http://assiston-toronto.com/" target="_blank">
-              Link
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function Solutions() {
-  return <p>Solutions that help you.</p>;
-}
-
-function Contact() {
-  return <p>Feel free to reach us.</p>;
 }
 
 function Home() {

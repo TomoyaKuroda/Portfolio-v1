@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
 @import "./projects.scss";
-$red: #e20001;
+@import "./contact.scss";
+// $red: #e20001;
+$red: #009da8;
+
 $black: #191919;
 
 html,
@@ -119,13 +122,17 @@ header {
               padding: 0;
               li {
                 list-style: none;
-                font-size: 6rem;
+                font-size: 3rem;
                 font-weight: 700;
                 cursor: pointer;
-                height: 135px;
+                height: 80px;
                 overflow: hidden;
                 position: relative;
                 width: 700px;
+                @media (min-width: 768px) {
+                  font-size: 6rem;
+                  height: 135px;
+                }
                 a {
                   position: absolute;
                   color: #fff;
