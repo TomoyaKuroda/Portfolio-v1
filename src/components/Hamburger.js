@@ -107,7 +107,7 @@ const Hamburger = ({ state }) => {
                       ref={el => (line3 = el)}
                       to="/contact-us"
                     >
-                      Contact us
+                      Contact me
                     </Link>
                   </li>
                 </ul>
