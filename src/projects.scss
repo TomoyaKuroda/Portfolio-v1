@@ -7,7 +7,7 @@
 
 .flip-card {
   width: 275px;
-  height: 500px;
+  height: 490px;
   // margin: auto;
   margin-bottom: 16px;
   &:hover .flip-card-inner {
@@ -63,7 +63,7 @@
   transform-style: preserve-3d;
   .flip-card-front img {
     width: 275px;
-    height: 500px;
+    height: 490px;
   }
 }
 
