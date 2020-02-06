@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
 @import "./projects.scss";
 @import "./contact.scss";
-// $red: #e20001;
-$red: #009da8;
 
 $black: #191919;
 
@@ -89,7 +87,11 @@ header {
     }
     .menu-layer {
       position: relative;
-      background: $red;
+      background: url(./assets/gradient.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
       height: 100%;
       overflow: hidden;
       .menu-city-background {
