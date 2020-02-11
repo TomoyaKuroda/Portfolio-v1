@@ -5,8 +5,8 @@ import assistonImg from "../assets/assiston.png";
 import assistonLaptopImg from "../assets/assistonDesktop.png";
 import archemistMobile from "../assets/archemist-mobile.png";
 import archemistLaptop from "../assets/archemist-laptop.png";
-import { useRef } from "react";
-
+import PFM from "../assets/pfm.png";
+import PFMmobile from "../assets/pfm-mobile.png";
 function Projects() {
   // let title = useRef(null);
   let title = [];
@@ -84,6 +84,7 @@ function Projects() {
             </div>
           </div>
         </div>
+
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
@@ -116,29 +117,29 @@ function Projects() {
             </div>
           </div>
         </div>
-        {/* <div className="flip-card">
+        <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img src={archemistMobile} alt="" />
+              <img src={PFMmobile} alt="" />
             </div>
             <div className="flip-card-back">
               <div className="back-header">
                 <a
-                  href="https://archemist.org/"
+                  href="https://personal-finance-manager.now.sh/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={archemistLaptop} alt="" />
+                  <img src={PFM} alt="" />
                 </a>
               </div>
               <div className="back-footer">
-                <h2>ARchemisT</h2>
+                <h2>PFM</h2>
                 <p>
-                  I built the website with Figma provided by a designer to get
-                  people interested in the crowdfunding project.
+                  I built the application with Next.js for API and MongoDB for
+                  database to manage your income and expense.
                 </p>
                 <a
-                  href="https://archemist.org/"
+                  href="https://personal-finance-manager.now.sh/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -147,7 +148,7 @@ function Projects() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
